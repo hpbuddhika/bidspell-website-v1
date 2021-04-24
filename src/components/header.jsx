@@ -3,17 +3,17 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
-  <header className="box-border	 h-20 font-sans font-normal text-lg tracking-wide antialiased text-gray-600">
+  <header className="box-border shadow-sm	 h-20 font-sans font-normal text-lg tracking-wide antialiased text-gray-600">
     <div className="max-w-screen-xl	h-20 m-auto">
       <div className="flex h-full py-6 ">
         <div className="flex-1">Bidspell</div>
-        <div className="flex-initial group relative mx-4 cursor-pointer	">
+        <div className="flex-initial h-16 group relative mx-4 cursor-pointer	">
           Audience
-          <div class="absolute z-10 top-8 m-0 text-sm invisible opacity-0  shadow-md border-8 border-white	 rounded-lg	 transition delay-100 duration-300 ease-in-out	 text-gray-700 group-hover:visible  group-hover:opacity-100	">
-            <ul class="-m-0.5 w-60 bg-white">
+          <div class="absolute z-10 top-10 mt-4 text-sm invisible opacity-0  shadow-md border-8 border-gray-50 rounded-lg	 transition delay-100 duration-300 ease-in-out	 text-gray-700 group-hover:visible  group-hover:opacity-100	">
+            <ul class="-m-0.5 w-60 bg-gray-50">
               <li class="mb-0">
                 <a
-                  class=" bg-white rounded-t-md	 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                  class=" bg-gray-50 rounded-t-md	 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                   href="#"
                 >
                   <div class="inline-block relative">
@@ -51,7 +51,7 @@ const Header = ({ siteTitle }) => (
               </li>
               <li class="m-0">
                 <a
-                  class="bg-white hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                  class="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                   href="#"
                 >
                   <svg
@@ -73,7 +73,7 @@ const Header = ({ siteTitle }) => (
               </li>
               <li class="m-0">
                 <a
-                  class=" bg-white hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                  class=" bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                   href="#"
                 >
                   <svg
@@ -95,7 +95,7 @@ const Header = ({ siteTitle }) => (
               </li>
               <li class="m-0">
                 <a
-                  class="bg-white hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                  class="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                   href="#"
                 >
                   <svg
@@ -117,7 +117,7 @@ const Header = ({ siteTitle }) => (
               </li>
               <li class="m-0">
                 <a
-                  class="bg-white rounded-b-md hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                  class="bg-gray-50 rounded-b-md hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                   href="#"
                 >
                   <svg
@@ -140,13 +140,13 @@ const Header = ({ siteTitle }) => (
             </ul>
           </div>
         </div>
-        <div className="flex-initial group relative mx-4 cursor-pointer	">
+        <div className="flex-initial h-16	 group  relative mx-4 cursor-pointer	">
           Engagement
-          <div class="absolute z-10 top-8 m-0 text-sm invisible opacity-0  shadow-md border-8 border-white	 rounded-lg	 transition delay-100 duration-300 ease-in-out	 text-gray-700 group-hover:visible  group-hover:opacity-100	">
-            <ul class="-m-0.5 w-60 bg-white">
+          <div class="absolute z-10  top-10 mt-3 m-0 text-sm invisible opacity-0  shadow-md border-8 border-gray-50		 rounded-lg	 transition delay-100 duration-300 ease-in-out	 text-gray-700 group-hover:visible  group-hover:opacity-100	">
+            <ul class="-m-0.5 w-60 bg-gray-50">
               <li class="mb-0">
                 <a
-                  class=" bg-white rounded-t-md	 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                  class=" bg-gray-50 rounded-t-md	 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                   href="#"
                 >
                   <div class="inline-block relative">
@@ -184,7 +184,7 @@ const Header = ({ siteTitle }) => (
               </li>
               <li class="m-0">
                 <a
-                  class="bg-white hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                  class="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                   href="#"
                 >
                   <svg
@@ -206,7 +206,7 @@ const Header = ({ siteTitle }) => (
               </li>
               <li class="m-0">
                 <a
-                  class=" bg-white hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                  class=" bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                   href="#"
                 >
                   <svg
@@ -228,7 +228,7 @@ const Header = ({ siteTitle }) => (
               </li>
               <li class="m-0">
                 <a
-                  class="bg-white hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                  class="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                   href="#"
                 >
                   <svg
@@ -250,7 +250,7 @@ const Header = ({ siteTitle }) => (
               </li>
               <li class="m-0">
                 <a
-                  class="bg-white rounded-b-md hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                  class="bg-gray-50 rounded-b-md hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                   href="#"
                 >
                   <svg
