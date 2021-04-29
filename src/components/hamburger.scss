@@ -1,0 +1,120 @@
+$hamburger-menu-lines-height: 0.2rem;
+$hamburger-menu-lines-width: 2rem;
+$hamburger-menu-lines-margin: 0.4rem;
+$offset-for-squeeze: $hamburger-menu-lines-height + $hamburger-menu-lines-margin;
+
+.show{
+   display: block;
+}
+
+.menu-opener {
+    // display: none;
+
+    &:checked {
+        ~ .hamburger-menu__line {
+            &.--top-line {
+                animation: squeeze-down .5s forwards;
+            }
+
+            &.--middle-line {
+                animation: fade-out .5s forwards;
+            }
+
+            &.--bottom-line {
+                animation: squeeze-up .5s forwards;
+            }
+
+          
+        }
+
+        ~ .show{
+           display:block
+        }
+
+       
+    }
+}
+
+.hamburger-menu {
+    animation: fade-in 2s;
+    cursor: pointer;
+
+    &:hover > .hamburger-menu__line {
+        box-shadow: 0 .375rem .875rem 0 rgba(0, 0, 0, 0.3);
+    }
+
+    &__line {
+        background-color: rgb(66, 66, 66);
+        border-radius: .5rem;
+        box-shadow: 0 .125rem .625rem 0 rgba(0, 0, 0, 0.3);
+        height: $hamburger-menu-lines-height;
+        width: $hamburger-menu-lines-width;
+
+        &.--top-line {
+            animation: squeeze-down-reverse .5s forwards;
+        }
+
+        &.--middle-line {
+            animation: fade-in .5s forwards;
+            margin: $hamburger-menu-lines-margin 0;
+        }
+
+        &.--bottom-line {
+            animation: squeeze-up-reverse .5s forwards;
+        }
+    }
+}
+
+@keyframes squeeze-down {
+    50% {
+        transform: translate(0, $offset-for-squeeze) rotate(0);
+    }
+    100% {
+        transform: translate(0, $offset-for-squeeze) rotate(45deg);
+    }
+}
+
+@keyframes squeeze-down-reverse {
+    0% {
+        transform: translate(0, $offset-for-squeeze) rotate(45deg);
+    }
+    50% {
+        transform: translate(0, $offset-for-squeeze) rotate(0);
+    }
+}
+
+@keyframes squeeze-up {
+    50% {
+        transform: translate(0, -$offset-for-squeeze) rotate(0);
+    }
+    100% {
+        transform: translate(0, -$offset-for-squeeze) rotate(-45deg);
+    }
+}
+
+@keyframes squeeze-up-reverse {
+    0% {
+        transform: translate(0, -$offset-for-squeeze) rotate(-45deg);
+    }
+    50% {
+        transform: translate(0, -$offset-for-squeeze) rotate(0);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

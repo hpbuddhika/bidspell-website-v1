@@ -2,28 +2,37 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
+import Hamburger from '../components/hamburger'
+
 const Header = ({ siteTitle }) => (
-  <header class="box-border fixed z-50 w-full bg-white shadow-sm h-20 font-sans font-normal text-lg tracking-wide antialiased text-gray-600">
-    <div class="max-w-screen-xl	h-20 m-auto">
-      <div class="flex h-full py-6 ">
-        <div class="mr-1 w-20 h-full bg-red-400 rounded-full text-center ">
+  <header className="block w-full px-5 bg-gray-400 fixed top-0  z-50  bg-white  h-20 font-sans font-normal  text-sm  lg:text-lg tracking-wide antialiased text-gray-600">
+    
+    <div className="text-center h-20 lg:hidden flex items-center	 ">
+      <Hamburger></Hamburger>
+    </div>
+    
+    <div className="max-w-screen-xl	h-20 px-5 m-auto hidden lg:block">
+      <div className="flex h-full py-6 ">
+        <div className="mr-1 w-20 h-full bg-red-400 rounded-full text-center ">
           Logo
+          <hamburger className="bg-blue-400"></hamburger>
+
         </div>
-        <div class="flex-shrink">Bidspell</div>
-        <div class="flex m-auto">
-          <div class="flex-initial h-16 group relative mx-4 cursor-pointer	">
+        <div className="flex-shrink">Bidspell</div>
+        <div className="flex m-auto">
+          <div className="flex-initial h-16 group relative mx-4 cursor-pointer	">
             Solutions
-            <div class="absolute z-10 top-10 mt-4 text-sm invisible opacity-0  shadow-md border-8 border-gray-50 rounded-lg	 transition delay-100 duration-300 ease-in-out	 text-gray-700 group-hover:visible  group-hover:opacity-100	">
-              <ul class="-m-0.5 w-60 bg-gray-50">
-                <li class="mb-0">
+            <div className="absolute z-10 top-10 mt-4 text-sm invisible opacity-0  shadow-md border-8 border-gray-50 rounded-lg	 transition delay-100 duration-300 ease-in-out	 text-gray-700 group-hover:visible  group-hover:opacity-100	">
+              <ul className="-m-0.5 w-60 bg-gray-50">
+                <li className="mb-0">
                   <a
-                    class=" bg-gray-50 rounded-t-md	 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                    className=" bg-gray-50 rounded-t-md	 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                     href="#"
                   >
-                    <div class="inline-block relative">
+                    <div className="inline-block relative">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 inline-block mr-3 animate-ping"
+                        className="h-5 w-5 inline-block mr-3 animate-ping"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -37,7 +46,7 @@ const Header = ({ siteTitle }) => (
                       </svg>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 absolute mr-3 top-0"
+                        className="h-5 w-5 absolute mr-3 top-0"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -53,14 +62,14 @@ const Header = ({ siteTitle }) => (
                     CDN Package
                   </a>
                 </li>
-                <li class="m-0">
+                <li className="m-0">
                   <a
-                    class="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                    className="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                     href="#"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 inline-block mr-3"
+                      className="h-5 w-5 inline-block mr-3"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -75,14 +84,14 @@ const Header = ({ siteTitle }) => (
                     Progressive Web App
                   </a>
                 </li>
-                <li class="m-0">
+                <li className="m-0">
                   <a
-                    class=" bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                    className=" bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                     href="#"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 inline-block mr-3 animate-pulse "
+                      className="h-5 w-5 inline-block mr-3 animate-pulse "
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -97,14 +106,14 @@ const Header = ({ siteTitle }) => (
                     Bidspell AMP
                   </a>
                 </li>
-                <li class="m-0">
+                <li className="m-0">
                   <a
-                    class="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                    className="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                     href="#"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 inline-block mr-3 animate-spin-slow"
+                      className="h-5 w-5 inline-block mr-3 animate-spin-slow"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -119,14 +128,14 @@ const Header = ({ siteTitle }) => (
                     Bidspell SEO
                   </a>
                 </li>
-                <li class="m-0">
+                <li className="m-0">
                   <a
-                    class="bg-gray-50 rounded-b-md hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                    className="bg-gray-50 rounded-b-md hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                     href="#"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 inline-block mr-3 animate-bounce "
+                      className="h-5 w-5 inline-block mr-3 animate-bounce "
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -144,19 +153,19 @@ const Header = ({ siteTitle }) => (
               </ul>
             </div>
           </div>
-          <div class="flex-initial h-16	 group  relative mx-4 cursor-pointer	">
+          <div className="flex-initial h-16	 group  relative mx-4 cursor-pointer	">
             Publishers
-            <div class="absolute z-10  top-10 mt-3 m-0 text-sm invisible opacity-0  shadow-md border-8 border-gray-50		 rounded-lg	 transition delay-100 duration-300 ease-in-out	 text-gray-700 group-hover:visible  group-hover:opacity-100	">
-              <ul class="-m-0.5 w-60 bg-gray-50">
-                <li class="mb-0">
+            <div className="absolute z-10  top-10 mt-3 m-0 text-sm invisible opacity-0  shadow-md border-8 border-gray-50		 rounded-lg	 transition delay-100 duration-300 ease-in-out	 text-gray-700 group-hover:visible  group-hover:opacity-100	">
+              <ul className="-m-0.5 w-60 bg-gray-50">
+                <li className="mb-0">
                   <a
-                    class=" bg-gray-50 rounded-t-md	 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                    className=" bg-gray-50 rounded-t-md	 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                     href="#"
                   >
-                    <div class="inline-block relative">
+                    <div className="inline-block relative">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 inline-block mr-3 animate-ping"
+                        className="h-5 w-5 inline-block mr-3 animate-ping"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -170,7 +179,7 @@ const Header = ({ siteTitle }) => (
                       </svg>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5 absolute mr-3 top-0"
+                        className="h-5 w-5 absolute mr-3 top-0"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -186,14 +195,14 @@ const Header = ({ siteTitle }) => (
                     CDN Package
                   </a>
                 </li>
-                <li class="m-0">
+                <li className="m-0">
                   <a
-                    class="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                    className="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                     href="#"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 inline-block mr-3"
+                      className="h-5 w-5 inline-block mr-3"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -208,14 +217,14 @@ const Header = ({ siteTitle }) => (
                     Progressive Web App
                   </a>
                 </li>
-                <li class="m-0">
+                <li className="m-0">
                   <a
-                    class=" bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                    className=" bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                     href="#"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 inline-block mr-3 animate-pulse "
+                      className="h-5 w-5 inline-block mr-3 animate-pulse "
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -230,14 +239,14 @@ const Header = ({ siteTitle }) => (
                     Bidspell AMP
                   </a>
                 </li>
-                <li class="m-0">
+                <li className="m-0">
                   <a
-                    class="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                    className="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                     href="#"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 inline-block mr-3 animate-spin-slow"
+                      className="h-5 w-5 inline-block mr-3 animate-spin-slow"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -252,14 +261,14 @@ const Header = ({ siteTitle }) => (
                     Bidspell SEO
                   </a>
                 </li>
-                <li class="m-0">
+                <li className="m-0">
                   <a
-                    class="bg-gray-50 rounded-b-md hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
+                    className="bg-gray-50 rounded-b-md hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                     href="#"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5 inline-block mr-3 animate-bounce "
+                      className="h-5 w-5 inline-block mr-3 animate-bounce "
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -277,16 +286,16 @@ const Header = ({ siteTitle }) => (
               </ul>
             </div>
           </div>
-          <div class="flex-initia mx-4 cursor-pointer	">Resources</div>
-          <div class="flex-initia mx-4 cursor-pointer	">Company</div>
-          {/* <div class="flex-initia mx-4 cursor-pointer	">Resources</div> */}
+          <div className="flex-initia mx-4 cursor-pointer	">Resources</div>
+          <div className="flex-initia mx-4 cursor-pointer	">Company</div>
+          {/* <div className="flex-initia mx-4 cursor-pointer	">Resources</div> */}
         </div>
-        <div class="flex-shrink self-center text-right mr-10">
-          <button class="bg-red-400	 py-2 px-4  mb-0 text-white	 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-105  hover:bg-red-500	 rounded inline-flex items-center  cursor-pointer">
-            <span class="mr-1">Sign In</span>
+        <div className="flex-shrink self-center text-right lg:mr-10">
+          <button className="bg-red-400	 py-2 px-4  mb-0 text-white	 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-105  hover:bg-red-500	 rounded inline-flex items-center  cursor-pointer">
+            <span className="mr-1">Sign In</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 mt-2 animate-bounce"
+              className="h-5 w-5 mt-2 animate-bounce"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -300,12 +309,12 @@ const Header = ({ siteTitle }) => (
             </svg>
           </button>
         </div>
-        <div class="flex-shrink self-center text-right">
-          <button class="bg-red-400	 py-2 px-4  mb-0 text-white	 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-105  hover:bg-red-500	 rounded inline-flex items-center  cursor-pointer">
-            <span class="mr-1">Get Started</span>
+        <div className="flex-shrink self-center text-left">
+          <button className="bg-red-400	 py-2 px-4  mb-0 text-white	 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-105  hover:bg-red-500	 rounded inline-flex items-center  cursor-pointer">
+            <span className="mr-1">Get Started</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5 mt-2 animate-bounce"
+              className="h-5 w-5 mt-2 animate-bounce"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

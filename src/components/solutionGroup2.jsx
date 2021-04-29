@@ -10,34 +10,38 @@ const SolutionGroup2 = () => {
   let image = useRef(null)
 
   useEffect(() => {
-    console.log(image)
-    TweenMax.from(image, 3, {
-      opacity: 1,
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.from(image, 3, {
+      scrollTrigger: {
+        trigger: image,
+        toggleActions: "play none none none",
+      },
+      opacity: 0,
       x: 600,
       ease: Power3.easeOut,
     })
-    TweenMax.to(image, 3, {
+    gsap.to(image, 3, {
+      scrollTrigger: image,
       opacity: 1,
-      // y:60,
       ease: Power3.easeOut,
     })
   })
 
   return (
-    <section>
-      <div class="h-full">
-        <div class=" h-24 ">
-          <div class="text-2xl text-center font-semibold tracking-wider text-gray-600">
+    <section className="h-full sm:h-screen">
+      <div className="flex flex-col h-full items-center justify-center bg-purple-400">
+        <div className="bg-purple-200">
+          <div className="text-lg sm:text-2xl text-center font-semibold tracking-wider text-gray-600">
             Some Title About the Groups of Solutions. Group Solutiions into
             Themes and Describe like in JWPlayer or Google Admanager
           </div>
         </div>
-        <div class="grid grid-flow-col grid-cols-2 h-full">
-          <div class=" flex flex-col justify-start">
-            <div class="text-2xl text-start font-semibold pt-20 tracking-wider text-gray-500">
+        <div className="grid sm:grid-flow-col grid-cols-1 sm:grid-cols-2 bg-purple-200">
+          <div className=" flex flex-col justify-start">
+            <div className="text-2xl text-start font-semibold pt-20 tracking-wider text-gray-500">
               Solution Group 1 that explain benifits to publishers.
             </div>
-            <div class="text-lg text-start text-gray-500  tracking-normal pt-10 pb-20">
+            <div className="text-lg text-start text-gray-500  tracking-normal pt-10 pb-20">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -47,12 +51,11 @@ const SolutionGroup2 = () => {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
           </div>
-          <div class="m-auto">
+          <div className="m-auto">
             <div
               ref={el => {
                 image = el
               }}
-              class="opacity-0	"
             >
               <StaticImage
                 src="../images/gatsby-astronaut.png"
