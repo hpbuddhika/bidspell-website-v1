@@ -22,16 +22,16 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const [width, setWidth] = React.useState(window.innerWidth)
-  const breakpoint = 1024
+  // const [width, setWidth] = React.useState(window.innerWidth)
+  // const breakpoint = 1024
 
-  React.useEffect(() => {
-    // const handleWindowResize = () => setWidth(window.innerWidth)
-    // window.addEventListener("resize", handleWindowResize)
+  // React.useEffect(() => {
+  //   // const handleWindowResize = () => setWidth(window.innerWidth)
+  //   // window.addEventListener("resize", handleWindowResize)
 
-    // // Return a function from the effect that removes the event listener
-    // return () => window.removeEventListener("resize", handleWindowResize)
-  }, [])
+  //   // // Return a function from the effect that removes the event listener
+  //   // return () => window.removeEventListener("resize", handleWindowResize)
+  // }, [])
 
   return (
     <>
