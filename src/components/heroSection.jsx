@@ -18,6 +18,8 @@ const HeroSection = () => {
       x: 0,
       duration: 3,
     })
+
+
   })
 
   return (

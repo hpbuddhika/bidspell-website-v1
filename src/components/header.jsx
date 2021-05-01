@@ -2,21 +2,18 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-import Hamburger from '../components/hamburger'
+import Hamburger from "../components/hamburger"
 
 const Header = ({ siteTitle }) => (
-  <header className="block w-full px-5 bg-gray-400 fixed top-0  z-50  bg-white  h-20 font-sans font-normal  text-sm  lg:text-lg tracking-wide antialiased text-gray-600">
-    
-    <div className="text-center h-20 lg:hidden flex items-center	 ">
+  <header className="block w-full px-5 py-0 m-0 bg-gray-400 fixed top-0  z-50  bg-white h-16 lg:h-20 font-sans font-normal  text-sm  lg:text-lg tracking-wide antialiased text-gray-600">
+    <div className="text-center h-16 lg:h-20 lg:hidden flex flex-col justify-center	 ">
       <Hamburger></Hamburger>
     </div>
-    
+
     <div className="max-w-screen-xl	h-20 px-5 m-auto hidden lg:block">
       <div className="flex h-full py-6 ">
         <div className="mr-1 w-20 h-full bg-red-400 rounded-full text-center ">
           Logo
-          <hamburger className="bg-blue-400"></hamburger>
-
         </div>
         <div className="flex-shrink">Bidspell</div>
         <div className="flex m-auto">
@@ -311,21 +308,23 @@ const Header = ({ siteTitle }) => (
         </div>
         <div className="flex-shrink self-center text-left">
           <button className="bg-red-400	 py-2 px-4  mb-0 text-white	 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-105  hover:bg-red-500	 rounded inline-flex items-center  cursor-pointer">
-            <span className="mr-1">Get Started</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 mt-2 animate-bounce"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
+            <a className="inline" href="#">
+              <span className="mr-1 inline">Get Started</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5 mt-2 animate-bounce inline"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </a>
           </button>
         </div>
       </div>

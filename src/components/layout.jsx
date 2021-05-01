@@ -26,16 +26,16 @@ const Layout = ({ children }) => {
   const breakpoint = 1024
 
   React.useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth)
-    window.addEventListener("resize", handleWindowResize)
+    // const handleWindowResize = () => setWidth(window.innerWidth)
+    // window.addEventListener("resize", handleWindowResize)
 
-    // Return a function from the effect that removes the event listener
-    return () => window.removeEventListener("resize", handleWindowResize)
+    // // Return a function from the effect that removes the event listener
+    // return () => window.removeEventListener("resize", handleWindowResize)
   }, [])
 
   return (
     <>
-      {width > breakpoint ? document.body.style.overflow = "visible" : null}
+      {/* {width > breakpoint ? document.body.style.overflow = "visible" : null} */}
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div className="px-2 md:px-0 max-w-screen-xl m-auto overflow-hidden">
         <main className="w-full">{children}</main>

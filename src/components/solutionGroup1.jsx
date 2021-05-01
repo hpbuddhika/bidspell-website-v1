@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 
 import { gsap, TweenMax, Power3 } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { ScrollTrigger} from "gsap/ScrollTrigger"
 import { CSSRulePlugin } from "gsap/CSSRulePlugin"
 
 import { StaticImage } from "gatsby-plugin-image"
@@ -28,7 +28,7 @@ const SolutionGroup1 = () => {
   })
 
   return (
-    <section className="h-full sm:h-screen">
+    <section className="h-full md:h-screen">
       <div className="flex flex-col h-full items-center justify-center bg-green-400	">
         <div className="bg-red-200">
           <div className="text-lg sm:text-2xl text-center font-semibold tracking-wider text-gray-600">

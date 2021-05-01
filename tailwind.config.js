@@ -10,9 +10,11 @@ module.exports = {
   },
   variants: {
     extend: {
-      display: ['responsive', 'group-hover', 'group-focus'],
-      scale: ['group-hover'],
-      visibility: ['group-hover'],
+      display: ['responsive', 'group-hover', 'group-focus','focus'],
+      scale: ['responsive', 'group-hover', 'group-focus','focus'],
+      visibility: ['responsive', 'group-hover', 'group-focus','focus'],
+      maxHeight:['responsive', 'group-hover', 'group-focus','focus'],
+      backgroundColor: ['group-focus','focus'],
     },
     animation: ['responsive', 'motion-safe', 'motion-reduce']
   },

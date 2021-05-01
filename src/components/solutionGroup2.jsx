@@ -28,7 +28,7 @@ const SolutionGroup2 = () => {
   })
 
   return (
-    <section className="h-full sm:h-screen">
+    <section className="h-full md:h-screen " id="section2">
       <div className="flex flex-col h-full items-center justify-center bg-purple-400">
         <div className="bg-purple-200">
           <div className="text-lg sm:text-2xl text-center font-semibold tracking-wider text-gray-600">

@@ -8,7 +8,7 @@ $offset-for-squeeze: $hamburger-menu-lines-height + $hamburger-menu-lines-margin
 }
 
 .menu-opener {
-    // display: none;
+    display: none;
 
     &:checked {
         ~ .hamburger-menu__line {
@@ -51,6 +51,8 @@ $offset-for-squeeze: $hamburger-menu-lines-height + $hamburger-menu-lines-margin
         width: $hamburger-menu-lines-width;
 
         &.--top-line {
+            background-color: red;
+            margin-top:5px;
             animation: squeeze-down-reverse .5s forwards;
         }
 
