@@ -16,7 +16,6 @@ const BidspellHelp = () => {
          
         </div>
         <div>
-          <MobileAccordion></MobileAccordion>
         </div>
       </div>
     </section>

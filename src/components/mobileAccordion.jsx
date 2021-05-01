@@ -3,15 +3,15 @@ import "./mobileAccordion.scss"
 
 const MobileAccordion = () => {
   return (
-    <div class="tabs">
-      <div class="tab">
+    <div className="tabs">
+      <div className="tab">
         <input type="radio" id="rd1" name="rd"></input>
-        <label class="tab-label" for="rd1">
+        <label className="tab-label text-left text-gray-900 text-2xl" for="rd1">
           Solutions
         </label>
-        <div class="tab-content h-full ">
-          <ul className="-m-0.5 w-60 bg-gray-50">
-            <li className="mb-0">
+        <div className="tab-content h-full ">
+          <ul className="-m-0.5 w-full bg-gray-50">
+            <li className="mb-0 text-left">
               <a
                 className=" bg-gray-50 rounded-t-md	 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -49,7 +49,7 @@ const MobileAccordion = () => {
                 CDN Package
               </a>
             </li>
-            <li className="m-0">
+            <li className="m-0 text-left">
               <a
                 className="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -71,7 +71,7 @@ const MobileAccordion = () => {
                 Progressive Web App
               </a>
             </li>
-            <li className="m-0">
+            <li className="m-0 text-left">
               <a
                 className=" bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -93,7 +93,7 @@ const MobileAccordion = () => {
                 Bidspell AMP
               </a>
             </li>
-            <li className="m-0">
+            <li className="m-0 text-left">
               <a
                 className="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -115,7 +115,7 @@ const MobileAccordion = () => {
                 Bidspell SEO
               </a>
             </li>
-            <li className="m-0">
+            <li className="m-0 text-left">
               <a
                 className="bg-gray-50 rounded-b-md hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -140,14 +140,14 @@ const MobileAccordion = () => {
           </ul>
         </div>
       </div>
-      <div class="tab">
+      <div className="tab">
         <input type="radio" id="rd2" name="rd"></input>
-        <label class="tab-label" for="rd2">
+        <label className="tab-label text-left text-gray-900 text-2xl" for="rd2">
          Publishers
         </label>
-        <div class="tab-content h-full">
-        <ul className="-m-0.5 w-60 bg-gray-50">
-            <li className="mb-0">
+        <div className="tab-content h-full">
+        <ul className="-m-0.5 w-full bg-gray-50">
+            <li className="mb-0 text-left">
               <a
                 className=" bg-gray-50 rounded-t-md	 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -185,7 +185,7 @@ const MobileAccordion = () => {
                 CDN Package
               </a>
             </li>
-            <li className="m-0">
+            <li className="m-0 text-left">
               <a
                 className="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -207,7 +207,7 @@ const MobileAccordion = () => {
                 Progressive Web App
               </a>
             </li>
-            <li className="m-0">
+            <li className="m-0 text-left">
               <a
                 className=" bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -229,7 +229,7 @@ const MobileAccordion = () => {
                 Bidspell AMP
               </a>
             </li>
-            <li className="m-0">
+            <li className="m-0 text-left">
               <a
                 className="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -251,7 +251,7 @@ const MobileAccordion = () => {
                 Bidspell SEO
               </a>
             </li>
-            <li className="m-0">
+            <li className="m-0 text-left">
               <a
                 className="bg-gray-50 rounded-b-md hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -276,14 +276,14 @@ const MobileAccordion = () => {
           </ul>
         </div>
       </div>
-      <div class="tab">
+      <div className="tab">
         <input type="radio" id="rd3" name="rd"></input>
-        <label class="tab-label" for="rd3">
+        <label className="tab-label text-left text-gray-900 text-2xl" for="rd3">
             Resources
         </label>
-        <div class="tab-content h-full">
-        <ul className="-m-0.5 w-60 bg-gray-50">
-            <li className="mb-0">
+        <div className="tab-content h-full">
+        <ul className="-m-0.5 w-full bg-gray-50">
+            <li className="mb-0 text-left">
               <a
                 className=" bg-gray-50 rounded-t-md	 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -321,7 +321,7 @@ const MobileAccordion = () => {
                 CDN Package
               </a>
             </li>
-            <li className="m-0">
+            <li className="m-0 text-left">
               <a
                 className="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -343,7 +343,7 @@ const MobileAccordion = () => {
                 Progressive Web App
               </a>
             </li>
-            <li className="m-0">
+            <li className="m-0 text-left">
               <a
                 className=" bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -365,7 +365,7 @@ const MobileAccordion = () => {
                 Bidspell AMP
               </a>
             </li>
-            <li className="m-0">
+            <li className="m-0 text-left">
               <a
                 className="bg-gray-50 hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -387,7 +387,7 @@ const MobileAccordion = () => {
                 Bidspell SEO
               </a>
             </li>
-            <li className="m-0">
+            <li className="m-0 text-left">
               <a
                 className="bg-gray-50 rounded-b-md hover:bg-red-200	 py-2 px-4 block whitespace-no-wrap"
                 href="#"
@@ -412,12 +412,12 @@ const MobileAccordion = () => {
           </ul>
         </div>
       </div>
-      <div class="tab">
+      <div className="tab">
         <input type="radio" id="rd4" name="rd"></input>
-        <label class="tab-label" for="rd4">
+        <label className="tab-label text-left text-gray-900 text-2xl bold" for="rd4">
             Company
         </label>
-        <div class="tab-content h-full">
+        <div className="tab-content">
          Bidspell company Details
         </div>
       </div>
